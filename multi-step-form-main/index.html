@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css">
+    <title>Multi Step Form</title>
+</head>
+<body>
+    <div class="comtainer">
+        <div class="steps">
+            <div class="step-wrapper">
+                <span class="step active">1</span>
+                <div class="test">
+                    <p >step 1</p>
+                    <p>YOUR INFO</p>
+                </div>
+            </div>
+            <div class="step-wrapper">
+                <span class="step">2</span>
+                <div>
+                    <p>step 2</p>
+                    <p>SELECT PLAN</p>
+                </div>
+            </div>
+            <div class="step-wrapper">
+                <span class="step">3</span>
+                <div>
+                    <p>step 3</p>
+                    <p>ADD-ONS</p>
+                </div>
+            </div>
+            <div class="step-wrapper">
+                <span class="step">4</span>
+                <div>
+                    <p>step 4</p>
+                    <p>SUMMARY</p>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="action">
+                <div class="head">
+                    <p class="title">Personal info</p>
+                    <p class="sub-title">Please provide your name, email address, and phone number.</p>
+                </div>
+                <form action="#" id="form">
+                    <div class="input-wrapper">
+                        <label class="lable" for="name">Name</label>
+                        <input type="text"
+                            name="name"
+                            id="name"
+                            placeholder="e.g. Stephen King"
+                            >
+                        <p class="required">this field is requried</p>
+                    </div>
+
+                        <div class="input-wrapper">
+                        <label class="lable" for="email">Email Address</label>
+                        <input type="email"
+                            name="email"
+                            id="email"
+                            placeholder="e.g. stephenking@lorem.com"
+                            >
+                        <p class="required">this field is requried</p>
+                    </div> 
+
+                    <div class="input-wrapper">
+                        <label class="lable" for="number">Phone Number</label>
+                        <input type="text"
+                            name="number"
+                            id="number"
+                            placeholder="e.g. +1 234 567 890"
+                            >
+                        <p class="required">this field is requried</p>
+                    </div>
+                </form>
+                <div class="plans-box">
+                    <div class="plans-wrapper">
+                        <div class="plan" id="arcade">
+                            <img src="assets/images/icon-arcade.svg" alt="" class="logo">
+                            <div class="plan-value">
+                                <p>Arcade</p>
+                                <p>$9/mo</p>
+                            </div>
+                        </div>
+                        <div class="plan selected" id="advance">
+                            <img src="assets/images/icon-advanced.svg" alt="" class="logo">
+                            <div class="plan-value">
+                                <p>advance</p>
+                                <p>$12/mo</p>
+                            </div>
+                        </div>
+                        <div class="plan" id="pro">
+                            <img src="assets/images/icon-pro.svg" alt="" class="logo">
+                            <div class="plan-value">
+                                <p>Pro</p>
+                                <p>$15/mo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="billing-option">
+                        <p id="month-plan" class="selected-plan">Monthly</p>
+                        <div class="switch">
+                            <span data-type="monthly"></span>
+                        </div>
+                        <p id="year-plan">Yearly</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="go-back" type="button"> go back</button>
+                    <button id="button" type="button">Next Step</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
